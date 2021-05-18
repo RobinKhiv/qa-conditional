@@ -3,22 +3,17 @@ package com.qa.runner;
 public class Runner {
 
 	public static void main(String[] args) {
-		int sum = 0;
-		int multi = 0;
-		int p1 = 2;
-		int p2 = 4;
-		int closerTo21 = 0;
-		
-		closerTo21 = Blackjack.play(p1,p2);
-		System.out.println("Blackjack: " + closerTo21);
-		
-		sum = Conditional.getOutput(1, 2, true);
-		multi = Conditional.getOutput(3, 3, false);
+		int sum = Conditional.getOutput(1, 2, true);
+		int multi = Conditional.getOutput(3, 3, false);
+		int blackjack = Blackjack.play(2,4);
+		int uniqueSum = Conditional.getUniqueSum(1, 1, 2);
+				
 		System.out.println("Sum1: " + sum);
-		System.out.println("Multiplcation: " + multi);
-		
 		sum = Conditional.getOutput(1,1, true);
 		System.out.println("Sum2: " + sum);
+		System.out.println("Multiplcation: " + multi);
+		System.out.println("Blackjack: " + blackjack);
+		System.out.println("Unique Sum: " + uniqueSum);
 
 	}
 
