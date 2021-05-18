@@ -19,10 +19,10 @@ public class Tax {
 	}
 	//Method 2 - which works out the exact amount that the user will be taxed using a similar process 
 	//    to that in the first method. That amount should be returned and output to the console.
-	public static double getSalaryPostTax(int salary) {
-		double percentage = (double)getTaxPercent(salary) * .01;
-		double taxableAmount = percentage *(double)salary;
-		return (double)salary - taxableAmount;
+	public static float getSalaryPostTax(int salary) {
+		float percentage = (float)getTaxPercent(salary) * .01f;
+		float taxableAmount = percentage *(float)salary;
+		return (float)salary - taxableAmount;
 	}
 	//These 2 methods should be able to work independently, so it is fine in this case if some of the code is repeated.*
 	//The salaries are taxed as below:	

@@ -7,7 +7,7 @@ public class Runner {
 		int multi = Conditional.getOutput(3, 3, false);
 		int blackjack = Blackjack.play(2,4);
 		int uniqueSum = Conditional.getUniqueSum(1, 1, 2);
-		double salary = Tax.getSalaryPostTax(22000);
+		float salary = Tax.getSalaryPostTax(22000);
 		
 		System.out.println("Sum1: " + sum);
 		sum = Conditional.getOutput(1,1, true);
