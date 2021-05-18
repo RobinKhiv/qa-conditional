@@ -65,4 +65,19 @@ public class Conditional {
 		
 		return result;
 	}
+	//Create a method which returns 'Fizz' for multiples of three and 'Buzz' for the multiples of five.
+	//Return 'FizzBuzz' for numbers which are multiples of both three and five.
+	//Return the input number for numbers that are neither.
+	public static String getFizzed(int i) {
+		String result = "";
+		
+		if(i%3 ==0)
+			result+= "Fizz";
+		if(i%5 == 0)
+			result+= "Buzz";
+		if(i%5 != 0 && i%3 != 0)
+			result+= Integer.toString(i);
+		
+		return result;
+	}
 }
